@@ -1,0 +1,920 @@
+/* 
+
+--- reset css ----
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #FAFAFA;
+}
+
+::placeholder{
+    color: #9F9F9F;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+/* 
+
+--- component ---
+
+*/
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/* 
+
+---- header style ----
+
+*/
+
+/* .header{
+
+} */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem; 
+}
+
+.navbar__menu{
+    width: 3.5rem;
+    background-color: #000;
+    height: .3rem;
+    position: relative;
+}
+
+.navbar__menu::before{
+    content: "";
+    width: 3.5rem;
+    background-color: #000;
+    height: .3rem;
+    position: absolute;
+    top: -1rem;
+}
+
+.navbar__menu::after{
+    content: "";
+    width: 3.5rem;
+    background-color: #000;
+    height: .3rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.navbar__logo{
+    color: #A55C30;
+    font-family: 'Lora';
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.navbar__logo--italic{
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 400;
+}
+
+.navbar__links{
+    display: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar__link{
+    font-family: 'Noto Sans';
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.navbar__link:first-child{
+    font-weight: 600;
+    color:#A55C30;
+}
+
+.navbar__link:hover{
+    color:#A55C30;
+}
+
+
+/* 
+
+--- banner style ---
+
+*/
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.banner__title{
+    padding-left: 2rem;
+    flex-basis: 40%;
+}
+
+.banner__text{
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 3.5rem;
+    border-left: .7rem solid #F8D7A4;
+    padding-left: 2rem;
+}
+
+.banner__img-wrapper{
+    flex-basis: 60%;
+}
+
+.banner__img{
+    width: 100%;
+}
+
+
+/* 
+
+--- about section ---
+
+*/
+
+
+.about{
+    margin-top: 2rem;
+}
+
+.about__wrapper{
+/* gap: 3rem; */
+align-items: center;
+}
+
+.about__img{
+    padding: 2rem;
+    flex-basis: 50%;
+
+}
+
+.about__image{
+    width: 100%;
+}
+
+.about__description{
+    text-align: center;
+    max-width: 55rem;
+    padding: 0 2rem;
+    flex-basis: 50%;
+}
+
+.about__title{
+    color: #A55C30;
+    font-size: 3rem;
+    font-family: 'Lora';
+    font-weight: 700;
+}
+
+.about__text{
+    font-family: 'nunito sans';
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-top: 2rem;
+}
+
+
+/* 
+
+--- services style ---
+
+*/
+
+.services{
+    background: url(../images/Rectangle-3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.services__wrapper{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.services__head{
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    font-family: 'lora';
+    color: #A55C30;
+
+}
+
+.services__items{
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.services__item{
+    max-width: 28rem;
+}
+
+.services__logo{
+    width: 6rem;
+}
+
+.services__title{
+    font-family: 'nunito sans';
+    font-weight: 700;
+    margin: 1rem 0 3rem 0;
+}
+
+.services__text{
+    font-family: 'nunito sans';
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+/* 
+
+--- fleet section ---
+
+*/
+
+.fleet{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.fleet__wrapper{
+    padding:0 2rem;
+}
+
+.fleet__title{
+    font-size: 3.5rem;
+    font-family: 'lora';
+    font-weight: 700;
+    color: #A55C30;
+}
+
+.carts{
+    display: flex;
+    justify-content: center;
+    gap: 4rem; 
+    flex-wrap: wrap;
+    margin: 5rem 0 2rem 0;
+}
+
+
+.car{
+    max-width: 32rem;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.car:nth-child(2),.car:nth-child(3){
+    display: none;
+}
+
+.car__img-wrapper{
+    max-height: 12rem;
+    padding:  0 2rem;
+    margin: 2rem 0;
+}
+
+.car__img{
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.car__class{
+    font-family: 'nunito sans';
+    color: #A55C30;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.car__name{
+    font-family: 'nunito sans';
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.car__text{
+    font-family: 'nunito sans';
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.car__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car__seats{
+    font-family: 'nunito sans';
+    font-size: 1.4rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car__luggage{
+    font-family: 'nunito sans';
+    font-size: 1.4rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fleet__pagination {
+    margin: 0 auto;
+    background-color:#F8D7A4;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fleet__pagination::before{
+    content: "";
+    background-color: #E5E5E5;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 2rem;
+}
+
+.fleet__pagination::after{
+    content: "";
+    background-color: #E5E5E5;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 2rem;
+}
+
+
+/* 
+
+--- info ---
+
+*/
+
+
+.info{
+    background-color: #232222F5;
+    color: #fff;
+    margin: 0 2rem;
+}
+
+.info__wrapper{
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.info__item{
+    font-family: 'noto sans';
+    width: 17rem;
+}
+
+.info__number{
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.info__text{
+    font-size: 1.6rem;
+}
+
+
+/* 
+
+--- testimonials section ----
+
+*/
+
+
+.testimonials{
+    background-color: #F8D7A4;
+    margin: 0 2rem;
+    padding: 3rem 0;
+}
+
+.testimonials__wrapper{
+    text-align: center;
+}
+
+.testimonials__title{
+    color: #A55C30;
+    font-family: 'Lora';
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.testimonials__comments{
+    background-color: #fff;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .comment{
+
+} */
+
+.comment__text{
+    margin: 0 auto;
+    max-width: 27rem;
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 600;
+    padding: 4rem 0 2rem 0;
+    line-height: 2.5rem;
+}
+
+.comment__rate{
+    display: block;
+    max-width: 12rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+.comment__rate img{
+    max-width: 100%;
+}
+
+.avatar{
+    padding: 2rem 0 3rem;
+}
+
+.avatar__image{
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+.avatar__img{
+    max-width: 100%;
+}
+
+.avatarname{
+    font-family: 'Nunito Sans';
+    font-size: 2rem;
+}
+
+.avatar__country{
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    color: #979797;
+}
+
+.testimonials__pagination {
+    margin: 2rem auto 0;
+    background-color:#A55C30;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.testimonials__pagination::before{
+    content: "";
+    background-color: #fff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 2rem;
+}
+
+.testimonials__pagination::after{
+    content: "";
+    background-color: #fff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 2rem;
+}
+
+
+
+/* 
+
+--- call section ---
+
+*/
+
+
+.call{
+    background: url(../images/Rectangle-3.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.call__wrapper{
+    padding: 4rem 2rem;
+}
+
+.call p:first-child{
+    font-family: 'Noto Sans';
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.call p:last-child{
+    font-family: 'Noto Sans';
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+
+
+/* 
+
+--- contact ---
+
+*/
+
+.contact{
+    margin: 3rem 0 6rem;
+    padding: 0 2rem;
+}
+
+.contact__wrapper{
+    text-align: center;
+}
+
+.contact__title{
+    font-family: 'lora';
+    font-size: 3.2rem;
+    color: #A55C30;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form{
+    background-color: #E8EAEC;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    max-width: 70rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.form > *{
+    max-width: 40rem;
+    height: 5rem;
+    border: 0.5px solid #D2D2D2;
+    padding-left: 2rem;
+    font-family: 'lato';
+    color: #9F9F9F;
+}
+
+/* .form__name{
+
+}
+
+.form__email{
+
+}
+
+.form__cars{
+
+} */
+
+.form__text{
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+.form__send{
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 15rem;
+    height: 5rem;
+    padding: 0;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #A55C30;
+}
+
+
+/* 
+
+--- footer ---
+
+*/
+
+.footer{
+    background-color: #0C0C0C;
+}
+
+.footer__wrapper{
+    text-align: center;
+}
+
+.footer__items{
+    color: #FAFAFA;
+    font-family: 'nunito sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    padding: 4rem 3rem;
+    font-weight: 300;
+}
+
+.footer__item{
+    max-width: 37rem;
+}
+
+.footer__item p{
+    padding: 1rem 0;
+}
+
+.footer__item form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer__item form input , button{
+    border: none;
+}
+
+.footer__email{
+    font-family: 'lato';
+    height: 5rem;
+    padding-left: 1rem;
+    width: 26rem;
+}
+
+.footer__item p:first-child{
+    color: #A55C30;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.footer__adress{
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.socials{
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1.5px solid rgba(229, 229, 229, 0.4);
+
+}
+
+.copyright{
+    color: #FAFAFA;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 12px;
+    padding: 2rem 0;
+}
+
+
+
+
+/* 
+
+
+
+===== media queries =====
+
+
+
+*/
+
+@media (min-width: 576px){
+    .container{
+        width: 540px;
+    }
+    .navbar{
+        padding: 2rem 0;
+    }
+    .banner__title{
+        padding-left: 0;
+    }
+
+    .services__items{
+        padding: 0;
+    }
+
+}
+@media (min-width: 768px){
+    .container{
+        width: 720px;
+    }
+
+    .navbar__menu{
+        display: none;
+    }
+
+    .navbar__links{
+        display: flex;
+    }
+    .banner{
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+
+    .services__head{
+        font-size: 4.5rem;
+    }
+
+    .about__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about__description{
+        text-align: start;
+    }
+    .fleet__title{
+        font-size: 4.5rem;
+    }
+
+    .car:nth-child(2){
+        display: block;
+    }
+
+    .info{
+        margin: auto;
+    }
+
+    .info__wrapper{
+        padding: 8rem 0;
+    }
+
+
+    .info__number{
+        font-size: 7.2rem;
+        font-weight: 700;
+    }
+
+    .info__text{
+        font-size: 2.4rem;
+    }
+
+    .testimonials{
+        margin: 0;
+    }
+
+    .testimonials__comments{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+}
+
+
+@media (min-width: 992px){
+    .container{
+        width: 960px;
+    }
+    .banner__text{
+        font-size: 4.5rem;
+    }
+
+    .services__text{
+        text-align: start;
+    }
+    .services__items{
+        justify-content: space-between;
+    }
+    .car__class{
+        font-size: 2.4rem;
+    }
+
+    .testimonials__comments{
+        height: 30rem;
+    }
+
+    .comment__text{
+        max-width: 46rem;
+        font-size: 2rem;
+
+    }
+
+    .call__wrapper{
+        padding: 8rem 2rem;
+    }
+
+    .call p:first-child{
+        font-size: 3.2rem;
+    }
+    
+    .call p:last-child{
+        font-size: 4.8rem;
+    }
+
+    .footer__items{
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: space-between;
+    }
+    .footer__item form{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+
+    /* .about__description{
+        
+    } */
+    .about__title{
+        font-size: 4rem;
+        margin-bottom: 3.5rem;
+    }
+    .services{
+        padding: 3rem 0;
+    }
+    .services__head{
+        margin-bottom: 3.5rem;
+    }
+
+    .carts{
+        justify-content: space-between;
+    }
+
+    .car:nth-child(3){
+        display: block;
+    }
+}    
+
+
+@media (min-width: 1400px){
+    .container{
+        width: 1360px;
+    }        
+}        
+
